@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reclamation_ofs",
+  "info": {
+    "singularName": "reclamation-of",
+    "pluralName": "reclamation-ofs",
+    "displayName": "reclamationOF"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OF": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Produit": {
+      "type": "string"
+    },
+    "Atelier": {
+      "type": "string"
+    },
+    "Banc": {
+      "type": "string"
+    },
+    "Photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "DateReclamation": {
+      "type": "datetime"
+    },
+    "DateTraitement": {
+      "type": "datetime"
+    },
+    "EtatReclamation": {
+      "type": "string"
+    },
+    "Accessoire": {
+      "type": "string"
+    },
+    "Tissu": {
+      "type": "string"
+    },
+    "Coupe": {
+      "type": "string"
+    },
+    "Recoupage": {
+      "type": "string"
+    },
+    "Finition": {
+      "type": "string"
+    },
+    "Note": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
